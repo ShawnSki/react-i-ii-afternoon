@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import data from './data'
 import Card from './Components/Card'
+import Navigation from './Components/Navigation'
 
 class App extends Component {
   constructor() {
@@ -14,18 +15,24 @@ class App extends Component {
       users: data.slice()
     }
   }
+  // movieListItems = () => {
+  //   console.log(this.usermovies)
+  // }
 
   render() {
-    let userIndexArr = this.state.users[this.state.cardNum]
+    
+    let userObj = this.state.users[this.state.cardNum]
+    let listMovies = this.state.users[this.state.cardNum].favoriteMovies
+    // console.log(userObj)
     return (
       <div className="App">
-        <name />
         <header><h1>Home</h1></header>
         <Card
-          userIndx={userIndexArr}
+          userObject={userObj}
           usersArr={this.state.users}
-          userId={this.state.cardNum} />
-
+          userCount={this.state.cardNum}
+          userMovies={listMovies} />
+        <Navigation />
       </div>
     );
   }

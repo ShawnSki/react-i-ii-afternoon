@@ -10,18 +10,55 @@ header {
 
 .cardWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5em 0 2em 0;
+  background: #222222;
 }
 .cardBox {
-  background: #fff;
-  height: 25em;
-  width: 50em;
-  padding: 1em;
+  background: #ebebeb;
+  width: 90%;
+  margin: 3em 0 1em 0;
 }
-footer {
-  width: 50em;
+.cardBoxHeader {
   display: flex;
-  
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+.cardBoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2em;
+  margin: 0;
+}
+
+.navWrapper {
+  background: #222222;
+  display: flex;
+  justify-content: space-between;
+  min-height: 15em;
+}
+.innerBtnWrapper {
+  margin: 0;
+}
+.innerButtons {
+  color: #fff;
+  background: #33a5da;
+  border: 0;
+  border-radius: 1em;
+  padding: 0 2em;
+  margin: 0 1em;
+  height: 2.5em;
+  font-weight: bold;
+  font-size: .8em;
+}
+.otherButtons {
+  color: #fff;
+  background: #222222;
+  border: 0;
+  margin: 0 4em;
+  font-weight: bold;
+  font-size: .8em;
 }
