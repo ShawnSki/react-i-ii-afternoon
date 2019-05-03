@@ -15,10 +15,10 @@ class App extends Component {
       users: data.slice()
     }
   }
-  // movieListItems = () => {
-  //   console.log(this.usermovies)
-  // }
-
+  movieListItems = () => {
+    console.log(this.usermovies)
+  }
+  
   render() {
     
     let userObj = this.state.users[this.state.cardNum]
